@@ -4,17 +4,17 @@ metadata:
   name: giropops-senhas
   namespace: argocd
 spec:
-  project: "default"
+  project: default
   source:
-    helm: {}
     repoURL: 'https://github.com/DiogoMajela/descomplicando-gitops-no-kubernetes-argocd.git'
-    targetRevision: feat/day2
-    path: giropops-senhas/helm
+    targetRevision: feat/day-2
+    path: giropops-senhas/helm/
   destination:
+    server: https://kubernetes.default.svc
     namespace: giropops-senhas
-    server: 'https://kubernetes.default.svc'
   syncPolicy:
-    automated: {} 
+    automated:  
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true
-
+    
