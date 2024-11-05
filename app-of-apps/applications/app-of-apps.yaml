@@ -9,13 +9,13 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
+    path: app-of-apps
     helm:
       parameters:
       - name: "argocd.giropopsSenhas.enabled"
         value: "true"
       - name: "argocd.randomLogger.enabled"
-        value: "true" 
-    path: app-of-apps
+        value: "true"
     repoURL: https://github.com/DiogoMajela/descomplicando-gitops-no-kubernetes-argocd.git
     targetRevision: feat/day2
   syncPolicy:
@@ -23,6 +23,7 @@ spec:
       selfHeal: true
       prune: true
     syncOptions:
-    - CreateNamespace=true
+    - CreateNamespace=true 
     - PruneLast=true
+
 
