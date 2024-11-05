@@ -11,8 +11,6 @@ spec:
   source:
     helm:
       parameters:
-      - name: "giropopsSenhas.replicas"
-        value: "{{ .Values.argocd.giropopsSenhas.replicas}}"
       - name: "argocd.giropopsSenhas.enabled"
         value: "true"
       - name: "argocd.randomLogger.enabled"
