@@ -14,7 +14,7 @@ spec:
       valueFiles:
       - values.yaml
     path: random-logger/helm
-    repoUrl: https://github.com/DiogoMajela/descomplicando-gitops-no-kubernetes-argocd.git
+    repoURL: https://github.com/DiogoMajela/descomplicando-gitops-no-kubernetes-argocd.git
     targetRevision: HEAD
   syncPolicy:
     automated:
