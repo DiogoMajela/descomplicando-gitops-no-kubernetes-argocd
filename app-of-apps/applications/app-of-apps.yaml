@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     helm:
-    - parameters:
+      parameters:
       - name: "giropopsSenhas.replicas"
         value: "{{ .Values.argocd.giropopsSenhas.replicas}}"
       - name: "argocd.giropopsSenhas.enabled"
@@ -18,9 +18,9 @@ spec:
       - name: "argocd.randomLogger.enabled"
         value: "true" 
     path: app-of-apps
-    repoUrl: https://github.com/DiogoMajela/descomplicando-gitops-no-kubernetes-argocd.git
+    repoURL: https://github.com/DiogoMajela/descomplicando-gitops-no-kubernetes-argocd.git
     targetRevision: feat/day2
-  synPolicy:
+  syncPolicy:
     automated:
       selfHeal: true
     syncOptions:
