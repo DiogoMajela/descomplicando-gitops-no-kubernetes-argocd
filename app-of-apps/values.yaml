@@ -4,5 +4,5 @@ argocd:
     enabled: false
     replicas: 1
   randomLogger:
-    enabled: false
+    enabled: true
   
