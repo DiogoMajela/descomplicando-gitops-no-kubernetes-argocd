@@ -13,6 +13,9 @@ spec:
     path: random-logger/helm
     repoURL: https://github.com/DiogoMajela/descomplicando-gitops-no-kubernetes-argocd.git
     targetRevision: feat/day-2
+    helm:
+      valueFiles:
+        - app-of-apps/values.yaml
   syncPolicy:
     automated:
       selfHeal: true
