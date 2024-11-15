@@ -17,7 +17,7 @@ spec:
         value: "{{ .Values.argocd.giropopsSenhas.replicas }}"
     path: giropops-senhas/helm
     repoURL: https://github.com/DiogoMajela/descomplicando-gitops-no-kubernetes-argocd.git
-    targetRevision: feat/day2
+    targetRevision: feat/day-2
   syncPolicy:
     automated:
       selfHeal: true

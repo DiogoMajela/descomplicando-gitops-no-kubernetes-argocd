@@ -3,3 +3,4 @@ randomLogger:
   replicas: 2
   port: 5000
   imagePullPolicy: Always
+  enabled: false
